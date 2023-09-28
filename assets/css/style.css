@@ -1,0 +1,200 @@
+body {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid blue; */
+  box-sizing: border-box;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: rgb(185, 185, 185); */
+  padding: 1rem;
+  align-items: center;
+}
+
+
+.navbar-brand img {
+  width: 50px;
+}
+
+.navbar-button a {
+  text-decoration: none;
+}
+
+.navbar-button .register {
+  padding: 0.6rem 2rem;
+  background-color: rgb(160, 0, 0);
+  color: white;
+  border-radius: 5px;
+}
+
+.navbar-button .login {
+  margin-right: 1rem;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  border: 2px solid rgb(160, 0, 0);
+  color: rgb(160, 0, 0);
+}
+
+.home {
+  background-color: rgb(160, 0, 0);
+  margin: 1rem 14.5rem 1rem 4.5rem;
+  min-height: 450px;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+}
+
+.home .home-text {
+  margin: 5rem;
+  width: 400px;
+}
+
+.home h1 {
+  font-size: 48px;
+  margin-bottom: .5rem;
+}
+
+.home .home-text p {
+  font-weight: 100;
+  line-height: 1.5rem;
+}
+
+.home .home-text .home-title {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.home .home-text span {
+  font-weight: bold;
+}
+
+.home .home-text .title {
+  margin-bottom: 1rem;
+}
+
+.home-image {
+  background-color: rgb(14, 12, 12);
+  border-radius: 10px;
+  position: absolute;
+}
+
+
+.product {
+  margin: 1rem 9% 1rem 5%;
+  min-height: 450px;
+  position: relative;
+  color: rgb(160, 0, 0);
+}
+
+.product-header h2 {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.list-product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.list-product .card {
+  border-radius: 10px;
+  max-width: 300px;
+  margin-bottom: 2rem;
+}
+
+.list-product .card img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-body {
+  width: 250px;
+  box-sizing: border-box;
+}
+
+.product .card .title-product {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.product .card .price-product {
+  font-weight: 100;
+  margin-top: .5rem;
+}
+
+.product .card .card-text {
+  background-color: pink;
+  padding: 1rem;
+  margin-top: -10px;
+}
+
+@media screen and (max-width:578px) {
+  .home {
+    margin: 1rem 7% !important;
+  }
+  .home h1 {
+    font-size: 35px;
+  }
+  .home .home-text {
+    margin: 2rem;
+    width: 220px;
+  }
+  .home-image {
+    width: 250px;
+    height: 300px;
+    right: 30px;
+    bottom: -220px;
+  }
+
+  .list-product {
+    justify-content: space-around;
+  }
+  .product {
+    margin: 15rem 7%;
+  }
+
+}
+
+@media screen and (min-width:578px) and (max-width:992px) {
+  .list-product {
+    justify-content: space-around;
+  }
+
+  .home {
+    margin: 1rem 7%;
+  }
+
+  .home-image {
+    width: 500px;
+    height: 300px;
+    right: 93px;
+    bottom: -182px;
+  }
+
+  .product {
+    margin: 15rem 9% 1rem 5%;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .home-image {
+    top: 40px;
+    right: -110px;
+  }
+
+  .home-image {
+    width: 500px;
+    height: 300px;
+  }
+}
